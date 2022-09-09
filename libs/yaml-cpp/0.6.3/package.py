@@ -22,7 +22,7 @@ requires = [
 
 variants = [
     ["python-2.7"],
-    ["python-3.6"]
+    ["python-3.6+"]
 ]
 
 build_system = "cmake"

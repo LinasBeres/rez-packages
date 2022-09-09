@@ -17,7 +17,7 @@ requires = [
 
 variants = [
     ["platform-linux", "python-2.7"],
-    ["platform-linux", "python-3.6"]
+    ["platform-linux", "python-3.6+"]
 ]
 
 tools = ["f2py"]

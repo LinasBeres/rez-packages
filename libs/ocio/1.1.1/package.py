@@ -19,7 +19,7 @@ requires = [
     "boost-1.61+",
     "cmake-3+",
     "gcc-6+",
-    "yaml_cpp-0.6+",
+    "yaml_cpp-0.6+<0.7",
     "tinyxml-2.6+",
 ]
 
@@ -28,9 +28,6 @@ variants = [
 ]
 
 build_system = "cmake"
-
-with scope("config") as config:
-    config.build_thread_count = "logical_cores"
 
 uuid = "ocio-{version}".format(version=str(version))
 

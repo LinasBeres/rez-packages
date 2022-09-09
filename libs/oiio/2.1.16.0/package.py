@@ -37,7 +37,7 @@ requires = [
 
 variants = [
     ["python-2.7"],
-    ["python-3.6"]
+    #  ["python-3.6+"]
 ]
 
 tools = [
@@ -50,9 +50,6 @@ tools = [
 ]
 
 build_system = "cmake"
-
-with scope("config") as config:
-    config.build_thread_count = "logical_cores"
 
 uuid = "oiio-{version}".format(version=str(version))
 

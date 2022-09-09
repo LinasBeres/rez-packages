@@ -28,16 +28,13 @@ variants = [
 
 build_system = "cmake"
 
-with scope("config") as config:
-    config.build_thread_count = "logical_cores"
-
 uuid = "pugixml-{version}".format(version=str(version))
 
 def commands():
-    env.LD_LIBRARY_PATH.prepend("{root}/lib")
-    env.PKG_CONFIG_PATH.prepend("{root}/lib/pkgconfig")
-    env.CMAKE_MODULE_PATH.prepend("{root}/lib/cmake/pugixml")
+    env.LD_LIBRARY_PATH.prepend("{root}/lib64")
+    env.PKG_CONFIG_PATH.prepend("{root}/lib64/pkgconfig")
+    env.CMAKE_MODULE_PATH.prepend("{root}/lib64/cmake/pugixml")
 
     # Helper environment variables.
     env.PUGIXML_INCLUDE_PATH.set("{root}/include")
-    env.PUGIXML_LIBRARY_PATH.set("{root}/lib")
+    env.PUGIXML_LIBRARY_PATH.set("{root}/lib64")

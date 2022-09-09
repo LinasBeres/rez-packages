@@ -14,9 +14,9 @@ description = \
 
 requires = [
     "platform-linux",
-    "boost-1.61+<1.70",
-    "cmake-3+",
-    "gcc-6+",
+    "boost-1.61+<1.80",
+    "cmake-3+<3.20",
+    "gcc-6.0+",
     "glew-2+",
     "ilmbase-2.2+<2.4",
     "jinja2-2+",
@@ -54,9 +54,6 @@ tools = [
 ]
 
 build_system = "cmake"
-
-with scope("config") as config:
-    config.build_thread_count = "logical_cores"
 
 uuid = "usd-{version}".format(version=str(version))
 

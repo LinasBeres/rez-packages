@@ -15,7 +15,7 @@ set(DOXYGEN_ARCHIVE_VERSION "${DOXYGEN_VERSION_MAJOR}_${DOXYGEN_VERSION_MINOR}_$
 
 # Doxygen
 rez_set_archive(
-    DOXYGEN_URL doxygen/doxygen-Release_${DOXYGEN_ARCHIVE_VERSION}.tar.gz
+    DOXYGEN_URL doxygen/doxygen-${DOXYGEN_ARCHIVE_VERSION}.tar.gz
     https://github.com/doxygen/doxygen/archive/Release_${DOXYGEN_ARCHIVE_VERSION}.tar.gz
 )
 

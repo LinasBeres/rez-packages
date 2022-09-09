@@ -12,7 +12,7 @@ description = \
     """
 
 requires = [
-    "boost-1.61<1.71",
+    "boost-1.61+",
     "cmake-3+",
     "gcc-6+",
     "ilmbase-{version}".format(version=str(version)),
@@ -25,9 +25,6 @@ variants = [
 ]
 
 build_system = "cmake"
-
-with scope("config") as config:
-    config.build_thread_count = "logical_cores"
 
 uuid = "pyilmbase-{version}".format(version=str(version))
 
