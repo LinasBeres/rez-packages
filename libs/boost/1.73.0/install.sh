@@ -49,6 +49,10 @@ ${EXTRACT_PATH}/b2 \
     threading=multi \
     release \
     --with-python \
+    --with-filesystem \
+    --with-system \
+    --with-thread \
+    --with-program_options \
     install
 
 echo -e "\n"

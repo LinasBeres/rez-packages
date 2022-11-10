@@ -51,6 +51,10 @@ else
         -s NO_BZIP2=1 \
         --toolset=gcc \
         threading=multi \
+        --with-filesystem \
+        --with-system \
+        --with-thread \
+        --with-program_options \
         release
 fi
 
